@@ -1,0 +1,22 @@
+body {
+    background-color: #ecf0ec
+}
+
+.card {
+    background-color: white;
+}
+
+span {
+    color:black;
+}
+
+.header {
+    display:grid;
+    grid-template-columns: 160px 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+  }
