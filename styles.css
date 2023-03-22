@@ -1,5 +1,7 @@
 body {
-    background-color: #ecf0ec
+    background-color: #ecf0ec;
+    font-family: Verdana;
+    font-size: 15px;
 }
 
 .card {
