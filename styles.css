@@ -25,4 +25,18 @@ img {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 20px;
+    margin-top: 40px;
+}
+
+.wrap {
+    width: 900 px;
+    margin: 40px auto 40px auto
+}
+
+.mystery-card {
+    padding: 10px;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: white;
+    background-color: white;
 }
