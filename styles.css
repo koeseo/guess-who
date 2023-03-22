@@ -40,3 +40,16 @@ img {
     border-color: white;
     background-color: white;
 }
+
+.card {
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.instructions {
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    padding: 20px;
+}
