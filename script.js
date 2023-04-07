@@ -72,20 +72,29 @@ let cards = [
 function selectRandomCard() {
     // Choose a random mystery card number
     let randomIndex = Math.floor(Math.random() * 20)
-    let selectedRandomCard = cards[randomIndex]
    
     // Set dynamic ImagePath
-    let mysteryImage = document.querySelector('img.mystery-card')
-    let imagePath
-    if (randomIndex < 9) {
-        imagePath = 'images/characters_0' + (randomIndex + 1) + '.jpg'
-    } else {
-        imagePath = 'images/characters_' + (randomIndex + 1) + '.jpg'
-    }
-    mysteryImage.src = imagePath
-
-    // Set random mystery card name
-    mysteryName = document.querySelector('.mystery-card-div span')
-    mysteryName.innerHTML = selectedRandomCard.name
+    document.querySelector('.mystery-card').src = 'images/' + cards[randomIndex].image
+    document.querySelector('.mystery-card-div').querySelector('span').innerHTML = cards[randomIndex].name
+   
 }
 selectRandomCard()
+
+// function populateCards() {
+//     let cardsHTML = ''
+//     let cardInject = document.querySelector('.cards')
+//     for (i = 0; i < cards.length; i++) {
+//         let imagePath = ''
+//         if (i < 9) {
+//             imagePath = 'images/characters_0' + (i + 1) + '.jpg';
+//           } else {
+//             imagePath = 'images/characters_' + (i + 1) + '.jpg';
+//           }
+//           let cardHTML = '<div class="card" onclick="toggleEliminated(this)"><img src="' + imagePath + '"/><span>' + cards[i].name + '</span></div>';
+//           cardsHTML += cardHTML;
+//     }
+//     cardInject.innerhtml = cardsHTML
+
+// }
+
+// populateCards()
